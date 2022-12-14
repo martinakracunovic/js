@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Restro menu</title>
+  <link rel="shortcut icon" href="img/ico.ico" type="image/ico"/>
+  <meta name="keywords" content="menu, restro, restourant"/>
+	<meta name="description" content="Restro restaurant try to change the menu items every month and thereby enrich our offer as well as the user and guest experience. Everything is organic, full of protein and without additives. Enjoy!"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- NAVIGACIJA -->
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <div class="container-fluid  col-10 mx-auto d-flex">
+    <div class="topnav navbar-nav bg-light " id="myTopnav">
+      <!-- menuHeader() -->
+    </div>
+    <a class="icon text-dark">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a id="contactUs" class="btn btn-danger">Contact Us</a>
+  </div>
+</nav>
+<div class="dropdown-menu col-12 bg-light d-none text-dark">
+  <div class="dropdown-item">
+    <a href="#">Home</a>
+  </div>
+  <div class="dropdown-item">
+    <a href="menu.html">Menu</a>
+  </div>
+  <div class="dropdown-item">
+    <a href="reservation.html">Reservation</a>
+  </div>
+  <div class="dropdown-item">
+    <a href="author.html">Author</a>
+  </div>
+</div>
+
+<div id="contactUsModal" class="modal">
+  <!-- MODAL CONTENT -->
+  <div class="modal-content">
+    <div class="d-flex justify-content-between">
+      <span>Hi &#128075; How can we help?</span>
+      <span class="close">&times;</span>
+    </div>
+    <form id="contactUsForm">
+      <div class="mb-3">
+        <label class="form-label">Full Name:</label>
+        <input type="text" class="form-control" id="inputName">
+        <span  class="text-danger" id="errName"></label>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+        <span  class="text-danger" id="errEmail"></label>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Your Message</label>
+        <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+        <span  class="text-danger" id="errMessage"></label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <p id="contactSuccess" class="alert alert-success d-none"></p>
+    </form>
+  </div>
+</div>
+
+<!-- OBROCI -->
+<h1 class="text-center col-12 text-secondary mt-5">Menu</h1>
+<div id="mealsFilterList" class="col-5 d-flex justify-content-around mx-auto mt-4">
+  <a href="#" data-id="0" class="mealfilter btn btn-danger">All</a>
+  <a href="#" data-id="1" class="mealfilter btn btn-outline-danger">Breakfast</a>
+  <a href="#" data-id="2" class="mealfilter btn btn-outline-damsm onger">Lunch</a>
+  <a href="#" data-id="3" class="mealfilter btn btn-outline-danger">Diner</a>
+</div>
+<div id="meals" class="meals container">
+        <!-- ispis -->
+</div>
+
+<footer class="footer col-12 d-flex justify-content-around bg-white">
+    <div class="col-9 d-flex flex-wrap justify-content-around">
+        <div class="col-sm-3 pt-5 text-center">
+            <h3 class="text-dark">MENU</h3>
+            <ul id="footer-meni-ul" class="navbarMenu-ul navbar-nav container d-inline">
+                <!-- ispis -->
+            </ul> 
+        </div>
+        <div class="col-sm-3 col-10 pt-5 text-center">
+            <a href="index.html"><img class="img-fluid pt-4 pb-4" src="img/restologo.png" alt="Booka logo"></a>  
+            <p class="cena">Martina Kračunović 21/21</p>
+        </div>
+        <div class="col-sm-3 pt-5 text-center">
+            <h3 class="text-dark">LINKS</h3>
+            <ul id="links" class="navbarMenu-ul navbar-nav container">
+                <!-- ispis -->
+            </ul> 
+        </div>    
+
+    </div>
+</footer>
+
+</body>
+<script src="js/main.js"></script>
+</html>

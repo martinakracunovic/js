@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Restro Restaurant</title>
+  <link rel="shortcut icon" href="img/ico.ico" type="image/ico">
+  <meta name="keywords" content="home, restro, restourant"/>
+	<meta name="description" content="Restro restaurant is the best restaurant in town. we offer breakfast, lunch and dinner. Everything is organic, full of protein and without additives. Enjoy!">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+<body>
+<!-- NAVIGACIJA -->
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <div class="container-fluid  col-10 mx-auto d-flex">
+    <div class="topnav navbar-nav bg-light " id="myTopnav">
+      <!-- menuHeader() -->
+    </div>
+    <a class="icon text-dark">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a id="contactUs" class="btn btn-danger">Contact Us</a>
+  </div>
+</nav>
+<div class="dropdown-menu col-12 bg-light d-none text-dark">
+  <div class="dropdown-item">
+    <a href="#">Home</a>
+  </div>
+  <div class="dropdown-item">
+    <a href="menu.html">Menu</a>
+  </div>
+  <div class="dropdown-item">
+    <a href="reservation.html">Reservation</a>
+  </div>
+  <div class="dropdown-item">
+    <a href="author.html">Author</a>
+  </div>
+</div>
+
+<div id="contactUsModal" class="modal">
+  <!-- MODAL CONTENT -->
+  <div class="modal-content">
+    <div class="d-flex justify-content-between">
+      <span>Hi &#128075; How can we help?</span>
+      <span class="close">&times;</span>
+    </div>
+    <form id="contactUsForm">
+      <div class="mb-3">
+        <label class="form-label">Full Name:</label>
+        <input type="text" class="form-control" id="inputName">
+        <span  class="text-danger" id="errName"></label>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+        <span  class="text-danger" id="errEmail"></label>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Your Message</label>
+        <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+        <span  class="text-danger" id="errMessage"></label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <p id="contactSuccess" class="alert alert-success d-none"></p>
+    </form>
+  </div>
+</div>
+
+<!-- SLIDER -->
+<div class="slideshow-container">
+    <div class="mySlides fade col-10">
+        <img src="img/slider1.jpg"  style="width:100%"/>
+    </div>
+    <div class="mySlides fade col-10">
+        <img src="img/slider2.jpg"  style="width:100%"/>
+    </div>
+    <div class="mySlides fade col-10">
+        <img src="img/slider3.jpg"  style="width:100%"/>
+    </div>
+</div>
+<!--    Putting in the click dots   -->
+<div style="text-align:center">
+    <span class="dot dot1" data-id="1"></span>
+    <span class="dot dot2" data-id="2"></span>
+    <span class="dot dot3" data-id="3"></span>
+</div>
+
+<div class="col-12 col-sm-10 mx-auto d-flex justify-content-around flex-wrap mt-5 bg-light py-5">
+  <h2 class="col-12 text-center text-danger">Should to try</h2>
+  <div class="col-xl-5 col-sm-9 col-11 px-3">
+    <img src="img/chefRec.jpg" class="img-fluid" alt="Resto Restaurant Logo">
+  </div>
+  <div class="col-xl-6 col-sm-9 col-11 d-flex flex-column justify-content-around px-3">
+    <h3>Chef Recommend</h3>
+    <p>You will taste an exquisite menu
+    <br>
+      You will be overwhelmed with fantastic smells
+      <br>
+      Everything you touch will be enchanting
+      <br>
+      Everything you hear will be fascinating
+      <br>
+      You will see glorious people, delightful presentations
+      and incredible shows
+      <br>
+      Be entertained, amused, and pampered
+      <br>
+      <br>
+      Experience luxury dining like never before
+      <br>
+      Guaranteed...
+      <br>
+      <br>
+      All your senses will be fully satisfied</p>
+      <div class="col-3">
+        <a href="menu.html" class="ml-0 btn btn-danger">View Menu</a>
+      </div>
+  </div>
+</div>
+
+<footer class="footer col-12 d-flex justify-content-around bg-white">
+    <div class="col-9 d-flex flex-wrap justify-content-around">
+        <div class="col-sm-3 pt-5 text-center">
+            <h3 class="text-dark">Menu</h3>
+            <ul id="footer-meni-ul" class="navbarMenu-ul navbar-nav container d-inline">
+                <!-- ispis -->
+            </ul> 
+        </div>
+        <div class="col-sm-3 col-10 pt-5 text-center">
+            <a href="index.html"><img class="img-fluid pt-4 pb-4" src="img/restologo.png" alt="Booka logo"></a>  
+            <p class="cena">Martina Kračunović 21/21</p>
+        </div>
+        <div class="col-sm-3 pt-5 text-center">
+            <h3 class="text-dark">LINKS</h3>
+            <ul id="links" class="navbarMenu-ul navbar-nav container">
+                <!-- ispis -->
+            </ul> 
+        </div>    
+
+    </div>
+</footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/main.js"></script>
+</html>
